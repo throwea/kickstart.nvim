@@ -1,0 +1,38 @@
+Lua Reference:
+  Lua is a lightweight scripting language that I can use to configure my neovim
+
+  Language Notes:
+    - Names/Identifiers: any string of letters, digits and underscores not starting with a digit. There are a subset of keywords excluded from this set of all names. This is the same in any other language. Don't set a variable name as "return" 
+    -
+
+
+  Using Lua -> Language Documentation https://neovim.io/doc/user/luaref.html#luaref
+    - Run Lua from command line example -> :lua print("Hello!")
+    - To run a Lua script in an external file use the source command. Example -> :source ~/programs/baz/myluascript.lua
+    - The init.lua file should always be placed in the ~/.config/nvim/ folder
+      - You can also create lua modules by placing them in the 'runtimepath' ~/.config/nvim/lua/ directory then you can use the // require("<myluamodule>")// 
+      - If you want to load another init.lua file nested in the lua directory you can just call require on the directory name and it will autoload the init.lua file. This is good if you need to override some key binds for a specific project
+      - Lua modules are usually cached. So if you make changes to a lua module you will need to overwrite the cache with // package.loaded['myluamodule'] = nil; require('myluamodule');// 
+    - To run arbitrary Vim command from Lua pass vim command as string like this -> //:lua vim.cmd("colorscheme habamax")//
+
+  Built-In Functions -> https://neovim.io/doc/user/builtin.html#builtin-functions:
+    - to use builtin functions you can test them using -> //:<built-in func>// in the command line
+
+  Function List -> https://neovim.io/doc/user/usr_41.html#function-list
+
+  Variables -> https://neovim.io/doc/user/lua-guide.html#_variables
+    - vim.g allows for the setting of global variables. We already saw this in our init.lua
+  
+  Options:
+    - set options with vim.opt.<option> = <some_value>
+
+  **Mappings -> https://neovim.io/doc/user/lua-guide.html#_mappings:
+    - Keybinds can be assigned to lua functions. I made an example of this in my init.lua file already
+    - Examples:
+      - vim.keymap.set('n', '<Leader>ex1', '<cmd>echo "Example 1"<cr>') // Translation: When in normal mode ('n') if you hit Leader+e+x+1
+      - vim.keymap.set('n', '<Leader>ex3', vim.treesitter.start) //Translation: When i:n normal mode ('n') hit leader + ex3
+      - vim.keymap.set('n', '<Leader>ex4', function() print('Example 4') end)
+      - <cmd>echo "Example 1"<cr>
+
+  Adding Plugins:
+    - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
