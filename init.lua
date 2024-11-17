@@ -1,20 +1,22 @@
 --[[ TODO
 -- Go to definition -> DONE. already integrated with telescope
 -- Get the file extension plugin???
+-- Get the quiet light color theme extension 
+-- figure out how to make the terminal screen transparent
 -- Get TMUX or terminal plugin
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- Setup the debugger
 --    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
--- make a repository for my nvim setup so it's tracked
 -- Setup a rest client
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
+-- figure out how to traverse directory using vim outside of opening Nvim -> DONE
 -- setup gitlens
--- "l" key is mad slow
 -- rest client can chain and compare http requests together
--- make everything exactly how I want it
+-- fix the autocomplete bug. When the first option appears you can't choose it to autocomplete
 -- visual block mode for commenting
+-- figure out how to add a file when traversing directories using the nvim <director> UI
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 

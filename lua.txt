@@ -36,3 +36,11 @@ Lua Reference:
 
   Adding Plugins:
     - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
+
+  Tips:
+    - Directory Traversing with netrw
+      - How Traverse Directories Using Neovim: $ nvim <directory name> 
+      - Create a new directory with "d" while in vim file explorer
+      - Create a new file with "%" while in vim file explorer
+    - To use autocomplete use <C-n> or <C-p>. Still screwy when the first option comes up. Fix this
+
