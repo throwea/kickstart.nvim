@@ -1,22 +1,26 @@
 --[[ TODO
--- Go to definition -> DONE. already integrated with telescope
+-- Goto definition excludes packages in virtual environment for python
+-- When doing file search with telescope search can I use something besides the arrow keys to scroll through files
+-- insert new line above does not have a binding
 -- Get the file extension plugin???
--- Get the quiet light color theme extension 
+-- make the tab key move a single tab
+-- Get the quiet light color theme extension -> Do this later. Kinda screwing stuff up. https://github.com/HUAHUAI23/nvim-quietlight?tab=readme-ov-file
 -- figure out how to make the terminal screen transparent
 -- Get TMUX or terminal plugin
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
+-- figure out how to execute a standalone lua script
 -- Setup the debugger
 --    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
 -- Setup a rest client
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
--- figure out how to traverse directory using vim outside of opening Nvim -> DONE
 -- setup gitlens
+-- how do I jump from editing a file to netrw? -> Maybe this won't be neccessary when I have integrated terminal
+-- add sample template for adding plugins which shows the params for what to install for lazyvim
 -- rest client can chain and compare http requests together
--- fix the autocomplete bug. When the first option appears you can't choose it to autocomplete
+-- How do I surround text like I can do in vscode
 -- visual block mode for commenting
--- figure out how to add a file when traversing directories using the nvim <director> UI
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 

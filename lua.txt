@@ -1,4 +1,4 @@
-Lua Reference:
+Neovim Reference:
   Lua is a lightweight scripting language that I can use to configure my neovim
 
   Language Notes:
@@ -28,19 +28,33 @@ Lua Reference:
 
   **Mappings -> https://neovim.io/doc/user/lua-guide.html#_mappings:
     - Keybinds can be assigned to lua functions. I made an example of this in my init.lua file already
+    - <CR>: carriage return a.k.a. Enter button
     - Examples:
       - vim.keymap.set('n', '<Leader>ex1', '<cmd>echo "Example 1"<cr>') // Translation: When in normal mode ('n') if you hit Leader+e+x+1
       - vim.keymap.set('n', '<Leader>ex3', vim.treesitter.start) //Translation: When i:n normal mode ('n') hit leader + ex3
       - vim.keymap.set('n', '<Leader>ex4', function() print('Example 4') end)
       - <cmd>echo "Example 1"<cr>
 
-  Adding Plugins:
-    - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
-
+  Lazy: is a plugin package manager
+  Mason: ? -> For LSPs...
+  
   Tips:
     - Directory Traversing with netrw
       - How Traverse Directories Using Neovim: $ nvim <directory name> 
       - Create a new directory with "d" while in vim file explorer
       - Create a new file with "%" while in vim file explorer
-    - To use autocomplete use <C-n> or <C-p>. Still screwy when the first option comes up. Fix this
+
+    - Helpful keybinds
+      - Autocomplete -> Insert Mode
+        - <C-n> for next option 
+        - <C-p> for previous option
+        - <C-y> to accept current option
+      - Switching Between Tabs
+        - <C-h> switch to left pane on the screen
+        - <C-l> switch to the right pane
+        - <C-j> switch to below pane
+        - <C-k> switch to above pane
+
+    - Adding Plugins
+      - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
 

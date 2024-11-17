@@ -1,0 +1,16 @@
+return {
+  {
+    "<githubID>/<repository name>",
+
+    cmd = "<Command_to_activate_plugin>", 
+
+    keys = {
+      {"<leader>...", "<cmd>...", desc = "Description for the binding you will use to access the plugin"},
+      {"s", mode = {"n", "x", "o", false}}, --> disables default keymap for plugin
+      {"<leader>x", function() print("hello") end, desc="execute a function with a keymap"}
+    },
+    enabled = <bool, false will disable this plugin from being loaded> 
+    opts = { },
+    dependencies = { "<githubID>/<differentRepository>" },
+  }
+}
