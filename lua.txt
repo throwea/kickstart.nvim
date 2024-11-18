@@ -37,6 +37,12 @@ Neovim Reference:
 
   Lazy: is a plugin package manager
   Mason: ? -> For LSPs...
+
+  Mac Setup:
+  - download iterm2 $brew install --cask iterm2
+  - set iterm2 as default terminal click on iterm2-> set iterm as default
+  - download nerd font so neo tree web dev icons work $ curl -sS https://webi.sh/nerdfont | sh
+  - go to iterm2 -> preferences -> profiles -> text -> click use a different font for non-ascii text and put "nerd font"
   
   Tips:
     - Directory Traversing with netrw
