@@ -7,8 +7,8 @@
 -- make the tab key move a single tab
 -- Get the quiet light color theme extension -> Do this later. Kinda screwing stuff up. https://github.com/HUAHUAI23/nvim-quietlight?tab=readme-ov-file
 -- figure out how to make the terminal screen transparent
--- Get TMUX or terminal plugin
 -- download vim be good to improve vim skills
+-- Find an easy way to escape the toggle term terminal
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- figure out how to execute a standalone lua script
 -- Setup the debugger
@@ -686,11 +686,11 @@ require('lazy').setup({
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          -- ['<C-y>'] = cmp.mapping.confirm { select = true },
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
-          --['<CR>'] = cmp.mapping.confirm { select = true },
+          ['<CR>'] = cmp.mapping.confirm { select = true },
           --['<Tab>'] = cmp.mapping.select_next_item(),
           --['<S-Tab>'] = cmp.mapping.select_prev_item(),
 
