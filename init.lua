@@ -1,5 +1,6 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
+-- Typescript lsp is not working
 -- When doing file search with telescope search can I use something besides the arrow keys to scroll through files
 -- insert new line above does not have a binding
 -- Get the file extension plugin???
