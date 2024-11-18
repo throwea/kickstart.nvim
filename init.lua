@@ -5,7 +5,6 @@
 -- insert new line above does not have a binding
 -- Get the file extension plugin???
 -- make the tab key move a single tab
--- Get the quiet light color theme extension -> Do this later. Kinda screwing stuff up. https://github.com/HUAHUAI23/nvim-quietlight?tab=readme-ov-file
 -- figure out how to make the terminal screen transparent
 -- download vim be good to improve vim skills
 -- Find an easy way to escape the toggle term terminal
@@ -16,11 +15,11 @@
 -- Setup a rest client
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
+-- insert at beginning or end of block text
 -- setup gitlens
 -- how do I jump from editing a file to netrw? -> Maybe this won't be neccessary when I have integrated terminal
 -- add sample template for adding plugins which shows the params for what to install for lazyvim
 -- rest client can chain and compare http requests together
--- How do I surround text like I can do in vscode
 -- visual block mode for commenting
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00

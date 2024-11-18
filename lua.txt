@@ -40,6 +40,7 @@ Neovim Reference:
 
   Mac Setup:
   - download iterm2 $brew install --cask iterm2
+  - set have_nerd_font = true
   - set iterm2 as default terminal click on iterm2-> set iterm as default
   - download nerd font so neo tree web dev icons work $ curl -sS https://webi.sh/nerdfont | sh
   - go to iterm2 -> preferences -> profiles -> text -> click use a different font for non-ascii text and put "nerd font"
@@ -60,6 +61,10 @@ Neovim Reference:
         - <C-l> switch to the right pane
         - <C-j> switch to below pane
         - <C-k> switch to above pane
+      - Surround
+        - ysiw) Surround word with paren 
+        - ysip) Surround paragraph with parentheses
+        - cs'" Change the surrounding single quote to double quote
 
     - Adding Plugins
       - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
