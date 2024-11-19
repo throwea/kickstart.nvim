@@ -1,25 +1,17 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
 -- Typescript lsp is not working
--- When doing file search with telescope search can I use something besides the arrow keys to scroll through files
 -- insert new line above does not have a binding
 -- Get the file extension plugin???
--- make the tab key move a single tab
--- test to see if <leader>f formats in Golang or python
 -- download vim be good to improve vim skills
--- Find an easy way to escape the toggle term terminal
--- terminal is not persisting
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- figure out how to execute a standalone lua script
 -- Setup the debugger
 --    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
--- insert at beginning or end of block text
 -- setup gitlens
--- add sample template for adding plugins which shows the params for what to install for lazyvim
 -- rest client can chain and compare http requests together
--- visual block mode for commenting
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
@@ -36,7 +28,6 @@ vim.g.have_nerd_font = true
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
-
 -- Set the background color
 vim.opt.background = 'dark'
 -- Make line numbers default
@@ -61,7 +52,6 @@ end)
 
 -- Enable break indent
 vim.opt.breakindent = true
-
 -- Save undo history
 vim.opt.undofile = true
 
