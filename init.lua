@@ -5,19 +5,18 @@
 -- insert new line above does not have a binding
 -- Get the file extension plugin???
 -- make the tab key move a single tab
--- figure out how to make the terminal screen transparent
+-- test to see if <leader>f formats in Golang or python
 -- download vim be good to improve vim skills
 -- Find an easy way to escape the toggle term terminal
+-- terminal is not persisting
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- figure out how to execute a standalone lua script
 -- Setup the debugger
 --    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
--- Setup a rest client
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
 -- insert at beginning or end of block text
 -- setup gitlens
--- how do I jump from editing a file to netrw? -> Maybe this won't be neccessary when I have integrated terminal
 -- add sample template for adding plugins which shows the params for what to install for lazyvim
 -- rest client can chain and compare http requests together
 -- visual block mode for commenting
@@ -132,7 +131,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 --
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>:q<CR>', { desc = 'Exit terminal mode' })
 
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
@@ -741,6 +740,9 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
+    opts = {
+      transparent = true,
+    },
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
@@ -773,7 +775,7 @@ require('lazy').setup({
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
-      -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
+      -- - saiw) - [S]urround [A]d [I]nner [W]ord [)]Paren
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require('mini.surround').setup()

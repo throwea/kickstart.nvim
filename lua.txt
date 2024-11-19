@@ -62,10 +62,19 @@ Neovim Reference:
         - <C-j> switch to below pane
         - <C-k> switch to above pane
       - Surround
+        - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
+        - sd'   - [S]urround [D]elete [']quotes
+        - sr)'  - [S]urround [R]eplace [)] [']
+
         - ysiw) Surround word with paren 
+        - yss' surround entire line with single quote
         - ysip) Surround paragraph with parentheses
         - cs'" Change the surrounding single quote to double quote
 
     - Adding Plugins
       - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
+
+    - Transparency
+      - on WSL click the dropdown arrow at the top and then click the open settings.json file . Then add inside profiles.defaults the opacity = [1,100] and useAcrylic=false
+
 
