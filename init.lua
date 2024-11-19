@@ -1,8 +1,8 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
--- Typescript lsp is not working
+-- How to open multiple terminals
+-- Typescript lsp is not working 
 -- insert new line above does not have a binding
--- Get the file extension plugin???
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- figure out how to execute a standalone lua script
