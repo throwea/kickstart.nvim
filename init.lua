@@ -1,5 +1,6 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
+-- vim.ui_attach?
 -- format does not remove the unused imports
 -- How to open multiple terminals
 -- Typescript lsp is not working 
