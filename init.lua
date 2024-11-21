@@ -1,17 +1,18 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
+-- format does not remove the unused imports
 -- How to open multiple terminals
 -- Typescript lsp is not working 
 -- insert new line above does not have a binding
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- figure out how to execute a standalone lua script
+-- create a test http request to see if everything is working
 -- Setup the debugger
 --    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
 -- setup gitlens
--- rest client can chain and compare http requests together
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
@@ -103,7 +104,6 @@ vim.keymap.set('n', '<leader>d', 'dd')
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
 
 --example bind to lua function
