@@ -3,6 +3,9 @@
 -- vim.ui_attach?
 -- format does not remove the unused imports
 -- How to open multiple terminals
+-- start working with TMUX
+-- configure LSD 
+-- Get icons to appear on my desktop
 -- Typescript lsp is not working 
 -- insert new line above does not have a binding
 -- download vim be good to improve vim skills

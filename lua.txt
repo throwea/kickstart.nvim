@@ -87,6 +87,15 @@ Neovim Reference:
         - ysip) Surround paragraph with parentheses
         - cs'" Change the surrounding single quote to double quote
 
+      - LSP
+        - <leader>ca to see recommendations from the LSP type 
+        - gd same as vscode
+        - gI for going to implementation
+      - Searching
+        - <leader>s. for recent files
+        - <C-p> for files in directory where I did nvim
+        - <leader>sg for grepping for words
+
     - Adding Plugins
       - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
 
