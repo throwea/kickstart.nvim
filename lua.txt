@@ -39,7 +39,12 @@ Neovim Reference:
 
   Lazy: is a plugin package manager
   Mason: ? -> For LSPs...
-
+  Keyword Directories:
+    - .config/nvim/ftdetect
+      - "ftdetect" can
+      - to ignore inspected certain file types :let g:ft_ignore_pat = '\.\(Z\|gz\|bz2\|zip\|tgz\)$'
+      - To add a new filetype that is not detected you can use the vim.filetype.add() in init.lua to include it in nvim file detection
+      - addition
   Buffers:
     - A buffer is the in-memory text of a file
     - a window is a viewport into a buffer

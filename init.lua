@@ -28,6 +28,7 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- vim.g.do_filetype_lua = 1 --this is for filetype plugins that are defined with lua
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -101,7 +102,7 @@ vim.opt.scrolloff = 10
 --
 vim.filetype.add {
   extension = {
-    ['http'] = 'http',
+    http = 'http',
   },
 }
 --  MY BINDINGS
@@ -207,6 +208,11 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
     },
+  },
+  -- REST CLIENT
+  {
+    'mistweaverco/kulala.nvim',
+    opts = {},
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
