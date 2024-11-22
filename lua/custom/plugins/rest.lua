@@ -1,5 +1,7 @@
 return {
   'rest-nvim/rest.nvim',
-  version = '*',
   enabled = false,
+  -- opts = {
+  --   result_split_in_place = true,
+  -- },
 }

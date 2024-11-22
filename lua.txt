@@ -28,6 +28,8 @@ Neovim Reference:
 
   **Mappings -> https://neovim.io/doc/user/lua-guide.html#_mappings:
     - Keybinds can be assigned to lua functions. I made an example of this in my init.lua file already
+    - IMPORTANT: when a keymap is made the remap option is typically set to true by default. This means that remaps are recursive. If you set noremap then keymaps will not recurse down
+    - if a mapping has the silent=true option it will not be echoed to the command line
     - <CR>: carriage return a.k.a. Enter button
     - Examples:
       - vim.keymap.set('n', '<Leader>ex1', '<cmd>echo "Example 1"<cr>') // Translation: When in normal mode ('n') if you hit Leader+e+x+1
@@ -38,6 +40,15 @@ Neovim Reference:
   Lazy: is a plugin package manager
   Mason: ? -> For LSPs...
 
+  Buffers:
+    - A buffer is the in-memory text of a file
+    - a window is a viewport into a buffer
+    - tab page is a collection of windows. Page -> window -> buffer
+    - Our edits through neovim update the buffer which stores the text of the file we are modifying
+    - Three states of a buffer:
+      - active: the buffer is active in the window. Basically, youre editing a file and buffer is being modified
+      - inactive: buffer doesn't contain any text and is not displayed
+      - hidden: there is a file loaded onto a buffer but you can't see it. Same as active buffer but simply hidden from the user
   Mac Setup:
   - download iterm2 $brew install --cask iterm2
   - set have_nerd_font = true

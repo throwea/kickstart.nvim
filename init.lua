@@ -7,6 +7,7 @@
 -- insert new line above does not have a binding
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
+-- make the tab character work in visual and normal mode so I can tab in lines
 -- figure out how to execute a standalone lua script
 -- create a test http request to see if everything is working
 -- Setup the debugger
@@ -15,6 +16,7 @@
 -- Setup trouble from (folke)
 -- setup gitlens
 -- Setup undo tree
+-- For the kulala commands, make them only executable when I am in an http file. E.g. hitting enter in .http file will run the request
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------
