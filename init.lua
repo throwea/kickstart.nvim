@@ -99,6 +99,11 @@ vim.opt.scrolloff = 10
 --  See `:help hlsearch`
 --
 --
+vim.filetype.add {
+  extension = {
+    ['http'] = 'http',
+  },
+}
 --  MY BINDINGS
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -810,6 +815,7 @@ require('lazy').setup({
         'query',
         'vim',
         'vimdoc',
+        'http',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
