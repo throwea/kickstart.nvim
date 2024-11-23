@@ -781,9 +781,11 @@ require('lazy').setup({
       { vim.keymap.set('n', '[t', function()
         require('todo-comments').jump_prev()
       end, { desc = 'Jump to prev todo' }) },
+      -- { vim.keymap.set('n', '<leader>st', function()
+      --   require('todo-comments.search').search()
+      -- end, { desc = 'Search all highlighted messages' }) },
     },
   },
-
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
     config = function()
@@ -907,5 +909,6 @@ require('lazy').setup({
     },
   },
 })
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
