@@ -1,25 +1,24 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
 -- vim.ui_attach?
--- format does not remove the unused imports
+-- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
 -- configure LSD 
 -- Get icons to appear on my desktop
 -- Typescript lsp is not working 
--- insert new line above does not have a binding
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- figure out how to execute a standalone lua script
--- create a test http request to see if everything is working
--- Setup the debugger
---    https://medium.com/@suyash10581108/go-lang-debugging-simplified-in-neovim-with-delve-and-dap-760bb950305d
+-- Set a break point in a python project and run the debugger
+-- set a break point in a golang project and run the debugger by sending a request
 -- Setup git client (fugitive vs lazygit)
 -- Setup trouble from (folke)
+-- telescope-dap.nvim ??
+-- telescope search all TODOs??
 -- setup gitlens
 -- Setup undo tree
--- For the kulala commands, make them only executable when I am in an http file. E.g. hitting enter in .http file will run the request
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------

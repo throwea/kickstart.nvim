@@ -87,6 +87,8 @@ Neovim Reference:
         - ysip) Surround paragraph with parentheses
         - cs'" Change the surrounding single quote to double quote
 
+      - Simple keybinds:
+        - "O" inserts a line above and places you into insert mode similar to "o"
       - LSP
         - <leader>ca to see recommendations from the LSP type 
         - gd same as vscode
