@@ -216,6 +216,14 @@ require('lazy').setup({
   {
     'mistweaverco/kulala.nvim',
     opts = {},
+    config = function()
+      local builtin = require 'kulala'
+      vim.keymap.set('n', '<leader>rr', builtin.run, { desc = 'Execute an http request', silent = true, noremap = true })
+      vim.keymap.set('n', '<leader>i', builtin.inspect, { noremap = true, silent = true, desc = 'Inspect the current request' })
+      vim.keymap.set('n', '<leader>co', builtin.copy, { noremap = true, silent = true, desc = 'Copy the current request as a curl command' })
+      vim.keymap.set('n', '<leader>ci', builtin.from_curl, { noremap = true, silent = true, desc = 'Paste curl from clipboard as http request' })
+      vim.keymap.set('n', '<leader>t', builtin.toggle_view, { noremap = true, silent = true, desc = 'Toggle between body and headers' })
+    end,
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
