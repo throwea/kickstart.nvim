@@ -773,15 +773,16 @@ require('lazy').setup({
     event = 'VimEnter',
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false },
-    keys = {
-      { vim.keymap.set('n', ']t', function()
+    config = function()
+      require('todo-comments').setup()
+      vim.keymap.set('n', ']t', function()
         require('todo-comments').jump_next()
-      end, { desc = 'Jump to next todo' }) },
-      { vim.keymap.set('n', '[t', function()
+      end, { desc = 'Jump to next todo' })
+      vim.keymap.set('n', '[t', function()
         require('todo-comments').jump_prev()
-      end, { desc = 'Jump to prev todo' }) },
-      { vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<cr>', { desc = 'Search all highlighted messages' }) },
-    },
+      end, { desc = 'Jump to prev todo' })
+      vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<cr>', { desc = 'Search all highlighted messages' })
+    end,
   },
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
