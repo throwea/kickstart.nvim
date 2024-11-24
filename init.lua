@@ -1,6 +1,6 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
---https://github.com/jeffreytse/zsh-vi-mode
+-- https://github.com/jeffreytse/zsh-vi-mode
 -- vim.ui_attach?
 -- fix tod-comment error. And install zsh-vi-mode for ohmyzsh
 -- format does not remove the unused imports in golang
@@ -16,6 +16,8 @@
 -- Set a break point in a python project and run the debugger
 -- set a break point in a golang project and run the debugger by sending a request
 -- Setup git client (fugitive vs lazygit)
+-- set aliases for ls using lsd
+-- copy my .zshrc in this repo so I have a copy
 -- Setup trouble from (folke)
 -- telescope-dap.nvim ??
 -- telescope search all TODOs??
