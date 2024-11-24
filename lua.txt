@@ -106,4 +106,8 @@ Neovim Reference:
     
     - TMUX:
       - Start new TMUX session: tmux new -s session_name
+  
+    - ZSH
+      - brew install zsh-vi-mode
+      - source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
