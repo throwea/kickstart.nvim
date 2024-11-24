@@ -1,5 +1,6 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
+--https://github.com/jeffreytse/zsh-vi-mode
 -- vim.ui_attach?
 -- fix tod-comment error. And install zsh-vi-mode for ohmyzsh
 -- format does not remove the unused imports in golang
