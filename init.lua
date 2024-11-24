@@ -2,26 +2,21 @@
 -- Goto definition excludes packages in virtual environment for python
 -- https://github.com/jeffreytse/zsh-vi-mode
 -- vim.ui_attach?
--- fix tod-comment error. And install zsh-vi-mode for ohmyzsh
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
--- configure LSD 
+-- modify zsh to make the branch color red if my index is out of sync with remote
 -- Get icons to appear on my desktop
 -- Typescript lsp is not working 
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
--- make the tab character work in visual and normal mode so I can tab in lines
+-- make the tab character work in visual and normal mode so I  can tab in lines
 -- figure out how to execute a standalone lua script
 -- Set a break point in a python project and run the debugger
 -- set a break point in a golang project and run the debugger by sending a request
--- Setup git client (fugitive vs lazygit)
--- set aliases for ls using lsd
--- copy my .zshrc in this repo so I have a copy
 -- Setup trouble from (folke)
 -- telescope-dap.nvim ??
--- telescope search all TODOs??
--- setup gitlens
+-- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
@@ -120,8 +115,6 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
-vim.keymap.set('n', '<Tab>', 'i<Tab><Esc>_', { noremap = true, desc = 'Tab while in normal mode' }) --WARN: shift tab is not working
-
 --example bind to lua function
 --[[vim.keymap.set("i", "jk", function()
 	print("Elian get's Neovim")
@@ -758,6 +751,7 @@ require('lazy').setup({
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'folke/tokyonight.nvim',
+    -- 'scottmckendry/cyberdream.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     opts = {
       transparent = true,
@@ -786,9 +780,7 @@ require('lazy').setup({
       { vim.keymap.set('n', '[t', function()
         require('todo-comments').jump_prev()
       end, { desc = 'Jump to prev todo' }) },
-      -- { vim.keymap.set('n', '<leader>st', function()
-      --   require('todo-comments.search').search()
-      -- end, { desc = 'Search all highlighted messages' }) },
+      { vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<cr>', { desc = 'Search all highlighted messages' }) },
     },
   },
   { -- Collection of various small independent plugins/modules
