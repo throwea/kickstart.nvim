@@ -103,5 +103,7 @@ Neovim Reference:
 
     - Transparency
       - on WSL click the dropdown arrow at the top and then click the open settings.json file . Then add inside profiles.defaults the opacity = [1,100] and useAcrylic=false
-
+    
+    - TMUX:
+      - Start new TMUX session: tmux new -s session_name
 
