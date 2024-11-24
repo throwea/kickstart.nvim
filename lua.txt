@@ -98,6 +98,10 @@ Neovim Reference:
         - <C-p> for files in directory where I did nvim
         - <leader>sg for grepping for words
 
+    - Help
+      - When making keymaps first see if you can run the command using ":<CommandNameHere>"
+      - If you can't find the command name use ":help <plugin> name and try to search from there", this was how I get the TodoTelescope working
+
     - Adding Plugins
       - go the plugins folder and add a file per plugin. Follow this documentation for lazyvim: https://www.lazyvim.org/configuration/plugins
 
