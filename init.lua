@@ -1,6 +1,7 @@
 --[[ TODO
 -- Goto definition excludes packages in virtual environment for python
 -- vim.ui_attach?
+-- fix tod-comment error. And install zsh-vi-mode for ohmyzsh
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
@@ -116,6 +117,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
+vim.keymap.set('n', '<Tab>', 'i<Tab><Esc>_', { noremap = true, desc = 'Tab while in normal mode' }) --WARN: shift tab is not working
 
 --example bind to lua function
 --[[vim.keymap.set("i", "jk", function()
