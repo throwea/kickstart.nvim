@@ -110,6 +110,7 @@ Neovim Reference:
     
     - TMUX:
       - Start new TMUX session: tmux new -s session_name
+      - stop all tmux sessions: tmux kill-server
   
     - ZSH
       - brew install zsh-vi-mode
