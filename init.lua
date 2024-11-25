@@ -768,6 +768,19 @@ require('lazy').setup({
   },
 
   -- TODO: Highlight todo, notes, etc in comments
+  -- List of keywords
+  -- TODO:
+  -- HACK:
+  -- WARN:
+  -- WARNING:
+  -- PERF:
+  -- PASSED:
+  -- TESTING:
+  -- FAILED:
+  -- INFO:
+  -- NOTE:
+  -- INFO:
+  --
   {
     'folke/todo-comments.nvim',
     event = 'VimEnter',

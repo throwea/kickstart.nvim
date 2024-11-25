@@ -115,3 +115,5 @@ Neovim Reference:
       - brew install zsh-vi-mode
       - source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+    - Helpful OMZSH Plugins:
+      - https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/kubzsh-vi-modeectl/kubectl.plugin.zsh
