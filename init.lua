@@ -219,7 +219,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>i', builtin.inspect, { noremap = true, silent = true, desc = 'Inspect the current request' })
       vim.keymap.set('n', '<leader>co', builtin.copy, { noremap = true, silent = true, desc = 'Copy the current request as a curl command' })
       vim.keymap.set('n', '<leader>ci', builtin.from_curl, { noremap = true, silent = true, desc = 'Paste curl from clipboard as http request' })
-      vim.keymap.set('n', '<leader>t', builtin.toggle_view, { noremap = true, silent = true, desc = 'Toggle between body and headers' })
+      vim.keymap.set('n', '<leader>tv', builtin.toggle_view, { noremap = true, silent = true, desc = 'Toggle between body and headers' })
     end,
   },
 
@@ -316,7 +316,7 @@ require('lazy').setup({
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
-      vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>p', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
