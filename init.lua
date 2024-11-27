@@ -1,5 +1,6 @@
 --[[ TODO
 -- Debug Golang service. HIGH PRIORITY
+-- get code coverage gutters!!!
 -- Setup trouble from (folke)
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
@@ -10,6 +11,7 @@
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- telescope-dap.nvim ??
+-- what is a git hunk
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
