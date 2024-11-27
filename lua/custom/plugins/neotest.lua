@@ -30,6 +30,7 @@ return {
           '-coverprofile=' .. vim.fn.getcwd() .. '/coverage.out',
         },
         testify_enabled = true,
+        runner = 'gotestsum',
       }
     end,
     config = function(_, opts)
