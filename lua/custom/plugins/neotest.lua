@@ -29,7 +29,7 @@ return {
         go_test_args = {
           '-v',
           '-race',
-          '-coverprofile=' .. vim.fn.getcwd() .. '/coverage.out',
+          '-coverprofile=' .. vim.fn.getcwd() .. '/coverage.out', --INFO: the double dot is used for string concatenation
         },
         testify_enabled = true,
         runner = 'gotestsum',

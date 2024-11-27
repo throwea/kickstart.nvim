@@ -1,6 +1,6 @@
 --[[ TODO
 -- Debug Golang service. HIGH PRIORITY
--- get code coverage gutters!!!
+-- Fix keymap for coverage. We need to first load then toggle
 -- Setup trouble from (folke)
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
