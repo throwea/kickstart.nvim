@@ -127,3 +127,6 @@ Neovim Reference:
     - Debugging:
       - Debug golang (standalone) golang test by hitting <F5> and hitting choosing delve (go.mod) and the break point will be hit
 
+    - Language Specific Notes:
+      - Python:
+        - For dealing with virtual environments it should be enough to activate the environment before starting vim and the LSP will work

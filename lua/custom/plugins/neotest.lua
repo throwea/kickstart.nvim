@@ -9,6 +9,7 @@ return {
 
       'nvim-neotest/neotest-plenary',
       'nvim-neotest/neotest-vim-test',
+      'nvim-neotest/neotest-python',
 
       {
         'fredrikaverpil/neotest-golang',
@@ -32,6 +33,7 @@ return {
         testify_enabled = true,
         runner = 'gotestsum',
       }
+      opts.adapters['neotest-python'] = {}
     end,
     config = function(_, opts)
       if opts.adapters then

@@ -1,5 +1,4 @@
 --[[ TODO
--- Run Golang tests. HIGH PRIORITY
 -- Debug Golang service. HIGH PRIORITY
 -- Goto definition excludes packages in virtual environment for python
 -- format does not remove the unused imports in golang
@@ -11,6 +10,7 @@
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- Setup trouble from (folke)
+-- setup neotest for python and see if my nova tests run
 -- telescope-dap.nvim ??
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
