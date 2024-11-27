@@ -1,10 +1,12 @@
 --[[ TODO
 -- Debug Golang service. HIGH PRIORITY
--- Fix keymap for coverage. We need to first load then toggle
+-- Find a keybind to terminate the debug session
 -- Setup trouble from (folke)
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
+-- debug ui needs to be cleaned up
+-- add keymap to terminate debug process
 -- Typescript lsp is not working
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
