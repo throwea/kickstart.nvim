@@ -1,19 +1,15 @@
 --[[ TODO
+-- Run Golang tests. HIGH PRIORITY
+-- Debug Golang service. HIGH PRIORITY
 -- Goto definition excludes packages in virtual environment for python
--- https://github.com/jeffreytse/zsh-vi-mode
--- vim.ui_attach?
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
--- modify zsh to make the branch color red if my index is out of sync with remote
--- Get icons to appear on my desktop
 -- Typescript lsp is not working 
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
--- make the tab character work in visual and normal mode so I  can tab in lines
--- figure out how to execute a standalone lua script
+-- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
--- set a break point in a golang project and run the debugger by sending a request
 -- Setup trouble from (folke)
 -- telescope-dap.nvim ??
 -- See how I can look at the file history. Maybe vim fugitive?
@@ -528,8 +524,8 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
-        -- pyright = {},
+        gopls = {},
+        pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -621,6 +617,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        go = { 'gofmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -650,12 +647,12 @@ require('lazy').setup({
           -- `friendly-snippets` contains a variety of premade snippets.
           --    See the README about individual language/framework/plugin snippets:
           --    https://github.com/rafamadriz/friendly-snippets
-          -- {
-          --   'rafamadriz/friendly-snippets',
-          --   config = function()
-          --     require('luasnip.loaders.from_vscode').lazy_load()
-          --   end,
-          -- },
+          {
+            'rafamadriz/friendly-snippets',
+            config = function()
+              require('luasnip.loaders.from_vscode').lazy_load()
+            end,
+          },
         },
       },
       'saadparwaiz1/cmp_luasnip',
@@ -850,6 +847,7 @@ require('lazy').setup({
         'markdown',
         'markdown_inline',
         'query',
+        'go',
         'vim',
         'vimdoc',
         'http',
