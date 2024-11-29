@@ -1,6 +1,5 @@
 --[[ TODO
--- Debug Golang service. HIGH PRIORITY
--- Find a keybind to terminate the debug session
+-- Debug Golang service. HIGH PRIORITY ->
 -- Setup trouble from (folke)
 -- format does not remove the unused imports in golang
 -- How to open multiple terminals
@@ -13,9 +12,11 @@
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- telescope-dap.nvim ??
+-- not getting command line autocomplete
 -- what is a git hunk
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
+-- learn quickfix 
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------
@@ -78,6 +79,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
+-- Setup trouble from (folke)
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
