@@ -12,6 +12,8 @@
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- telescope-dap.nvim ??
+-- find a way to toggle diff that way I can see the changes I made in the file. Similar to VSCode
+-- setup keybinds for vim-fugitive
 -- not getting command line autocomplete
 -- what is a git hunk
 -- See how I can look at the file history. Maybe vim fugitive?
