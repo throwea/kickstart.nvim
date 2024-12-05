@@ -11,6 +11,7 @@
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
 -- learn quickfix
+-- Finish tmux notes https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 -- set function for commit and pushing with message in one go
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
