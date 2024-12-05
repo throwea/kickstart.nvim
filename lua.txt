@@ -130,3 +130,6 @@ Neovim Reference:
     - Language Specific Notes:
       - Python:
         - For dealing with virtual environments it should be enough to activate the environment before starting vim and the LSP will work
+
+    - Git:
+      - Hunk: a hunk is a subset of changed lines dispersed through out the change tree
