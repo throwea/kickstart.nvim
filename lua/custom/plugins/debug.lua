@@ -77,17 +77,20 @@ return {
       --    Feel free to remove or use ones that you like more! :)
       --    Don't feel like these are good choices.
       icons = { expanded = '▾', collapsed = '▸', current_frame = '*' },
+      floating = {
+        border = 'double',
+      },
       controls = {
         icons = {
-          pause = '⏸',
-          play = '▶',
-          step_into = '⏎',
-          step_over = '⏭',
-          step_out = '⏮',
-          step_back = 'b',
-          run_last = '▶▶',
-          terminate = '⏹',
-          disconnect = '⏏',
+          disconnect = '',
+          pause = '',
+          play = '',
+          run_last = '',
+          step_back = '',
+          step_into = '',
+          step_out = '',
+          step_over = '',
+          terminate = '',
         },
       },
     }

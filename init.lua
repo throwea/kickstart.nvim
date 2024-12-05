@@ -1,6 +1,4 @@
 --[[ TODO
--- Setup trouble from (folke)
--- format does not remove the unused imports in golang
 -- How to open multiple terminals
 -- start working with TMUX
 -- debug ui needs to be cleaned up
@@ -10,7 +8,6 @@
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- telescope-dap.nvim ??
--- not getting command line autocomplete
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
 -- learn quickfix

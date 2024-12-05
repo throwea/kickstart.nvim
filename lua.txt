@@ -1,6 +1,5 @@
 Neovim Reference:
   Lua is a lightweight scripting language that I can use to configure my neovim
-
   Language Notes:
     - Names/Identifiers: any string of letters, digits and underscores not starting with a digit. There are a subset of keywords excluded from this set of all names. This is the same in any other language. Don't set a variable name as "return" 
     -
@@ -133,3 +132,4 @@ Neovim Reference:
 
     - Git:
       - Hunk: a hunk is a subset of changed lines dispersed through out the change tree
+      - To view the search history of a file: lazygit -> <c-s> -> enter file name 
