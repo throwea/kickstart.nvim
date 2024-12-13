@@ -118,15 +118,7 @@ return {
           type = 'go',
           name = 'Debug Providers',
           request = 'launch',
-          program = '${file}/cmd/main.go', --WARN: not sure if this going to work
-          args = require('dap-go').get_arguments,
-          buildFlags = require('dap-go').get_build_flags,
-        },
-        {
-          type = 'go',
-          name = 'Debug Providers',
-          request = 'launch',
-          program = '${file}/cmd/main.go', --WARN: not sure if this going to work
+          program = '${file}/cmd/main.go',
           args = require('dap-go').get_arguments,
           buildFlags = require('dap-go').get_build_flags,
         },
