@@ -7,12 +7,13 @@
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
+-- have telescope include .config or .env files as these need to be edited
+-- make sure telescope does not include .venv files or .gitignore files excluding the config files
 -- telescope-dap.nvim ??
 -- See how I can look at the file history. Maybe vim fugitive?
 -- Setup undo tree
 -- learn quickfix
 -- Finish tmux notes https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
--- set function for commit and pushing with message in one go
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------
