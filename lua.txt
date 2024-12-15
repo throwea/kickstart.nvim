@@ -142,3 +142,18 @@ Neovim Reference:
     - Git:
       - Hunk: a hunk is a subset of changed lines dispersed through out the change tree
       - To view the search history of a file: lazygit -> <c-s> -> enter file name 
+      - "amend" is used when you want to make edits to a specific commit. Be careful as this overwrites the history of the commit. This is especially useful if you accidentally commit secrets. You can amend the commit
+        - Note: you can only amend the most recent commit. For example, let's say you commit something, but you forgot to add some extra lines. You can amend your commit and add any staged files into that same commit. It's like telling the bus stop driver to turn around to pick up the kid who missed the bus
+        - changes amended
+      - "drop" command basically means you are deleting a commit from the commit history. This is the same as rebasing. The command is git rebase -i <commit_sha>. If you see conflicts do a git rebase --continue, then git push --force to rewrite the history for the remote branch. Basically, if you have commits A->B->C and you do a git rebase -i <B> then your commit history will go to A->C. Here you have "dropped" the commit from the commit history
+      - "squash" is when you take multiple commits and combine them into one commit. In the OneClick PR approval for playbooks we will see the "Squash and Merge" option which is good because it combines all the commits into one and merges to main. This is good because if a revert needs to happen all the changes get removed at once since the changes and the merge were "squashed" into a single commit. This enables clean history of the target branch (main).
+      - "fixup" command is used during interactive rebases. Basically, a fixup commit allows you to make changes and combine them with the previous commit ensuring that you have a cleaner and more meaningful commit history. Fixup is really good when you want to correct mistakes from previous commits. Before merging a branch, use fixup to consolidate small fixes into corresponding base commits
+        1. $ git commit --fixup <commit_sha>
+        2. $ git rebase -i --autosquash <feature_branch> //this squashes the fixup commit into the head commit for the feature branch
+      - "cherry-pick" command allows you to port changes from the git history into you commit. This is super helpful in cases where you have to pull in changes from a seperate branch or commit. More importantly, you can just "cherry-pick" what changes you want and you don't have to merge the entire branch. You can transfer code from anywhere in the git history to your current commit
+        - cherry picking does create a new commit on the current branch. 
+        1. git log
+        2. g cherry-pick <commit_hash> //you can add multiple commit hashes or even do range of commits <start_commit>^..<end_commit>
+        3. Handle any merge conflicts by git adding the files 
+        4. git cherry-pick --continue
+
