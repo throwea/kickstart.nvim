@@ -139,7 +139,7 @@ Neovim Reference:
       - Python:
         - For dealing with virtual environments it should be enough to activate the environment before starting vim and the LSP will work
 
-    - Git:
+    - (Lazy)Git:
       - Hunk: a hunk is a subset of changed lines dispersed through out the change tree
       - To view the search history of a file: lazygit -> <c-s> -> enter file name 
       - "amend" is used when you want to make edits to a specific commit. Be careful as this overwrites the history of the commit. This is especially useful if you accidentally commit secrets. You can amend the commit
@@ -156,4 +156,4 @@ Neovim Reference:
         2. g cherry-pick <commit_hash> //you can add multiple commit hashes or even do range of commits <start_commit>^..<end_commit>
         3. Handle any merge conflicts by git adding the files 
         4. git cherry-pick --continue
-
+      - View File History of changes. Go to commits and do a ctrl-s and enter file by path and choose the file. From their yhou can see the history of the file and each commit
