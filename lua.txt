@@ -107,17 +107,20 @@ Neovim Reference:
     - Transparency
       - on WSL click the dropdown arrow at the top and then click the open settings.json file . Then add inside profiles.defaults the opacity = [1,100] and useAcrylic=false
     
-    - TMUX:
+    - TMUX -> Cheatsheet https://tmuxcheatsheet.com/:
       - Start new TMUX session: tmux new -s session_name (or just "tmux")
       - stop all tmux sessions: tmux kill-server
       - Open a window pane to the right: <C-b> % 
       - Open a window pane below: <C-b> " 
       - Close a window pane with: <C-d>
       - Move between panes: <C-b> arrow-key
-      - To start another tmux session: <C-b> c
+      - To start another tmux window: <C-b> c
       - Switch between TMUX sessions <C-b> session_number
       - Look at existing sessions: tmux ls
       - Reattach to a session: tmux attach -t session_number
+      - Rename current window <C-b> , 
+      - list current windows <C-b> w
+
       
       - there is a tmux plugin for nvim
   
