@@ -1,5 +1,6 @@
 --[[ TODO
 -- debug ui needs to be cleaned up
+-- Learn the multiwindow features which allows for multiple inputs to appear on the screen with my new LG Monitor
 -- figure out how to get browser inside of tmux
 -- Find way to list all of the breakpoints 
 -- Typescript lsp is not working
@@ -7,7 +8,7 @@
 -- enable dragging and dropping of copied text up and down like you could do in vscode
 -- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
--session- have telescope include .config or .env files as these need to be edited
+-- session- have telescope include .config or .env files as these need to be edited
 -- make sure telescope does not include .venv files or .gitignore files excluding the config files
 -- Setup undo tree
 -- learn quickfix
