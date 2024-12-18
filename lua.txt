@@ -36,6 +36,8 @@ Neovim Reference:
       - vim.keymap.set('n', '<Leader>ex4', function() print('Example 4') end)
       - <cmd>echo "Example 1"<cr>
     - To tab lines or blocks of code you can do >> or << in normal mode. For visual mode highlight the block and do > or <. Then use "." to keep tabbing in or out
+    - To increment a number have your cursor over the number and hit <C-a>
+    - to delete all lines with pattern use :g/pattern/d
 
   Lazy: is a plugin package manager
   Mason: ? -> For LSPs...
