@@ -7,11 +7,13 @@
 -- Typescript lsp is not working
 -- download vim be good to improve vim skills
 -- enable dragging and dropping of copied text up and down like you could do in vscode
--- make the tab character work in visual and normal mode so I can tab in lines
 -- Set a break point in a python project and run the debugger
 -- session- have telescope include .config or .env files as these need to be edited
 -- make sure telescope does not include .venv files or .gitignore files excluding the config files
 -- Setup undo tree
+-- Modularize config
+--  - Create a file for remaps
+-- add remap for :Ex
 -- learn quickfix
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
@@ -112,6 +114,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
+vim.keymap.set('n', '<leader>qu', vim.cmd.Ex, { desc = 'Write and Exit to Explorer' })
 --example bind to lua function
 --[[vim.keymap.set("i", "jk", function()
 	print("Elian get's Neovim")
@@ -311,6 +314,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
       vim.keymap.set('n', '<leader>p', builtin.find_files, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>sp', builtin.git_files, { desc = 'Search Git Files' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
