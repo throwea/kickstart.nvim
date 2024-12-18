@@ -6,11 +6,13 @@
 -- Find way to list all of the breakpoints 
 -- Typescript lsp is not working
 -- download vim be good to improve vim skills
--- enable dragging and dropping of copied text up and down like you could do in vscode
 -- Set a break point in a python project and run the debugger
 -- session- have telescope include .config or .env files as these need to be edited
 -- make sure telescope does not include .venv files or .gitignore files excluding the config files
 -- Setup undo tree
+-- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
+-- Spend more time learning lua
+-- Figure out the tmux keymap
 -- Modularize config
 --  - Create a file for remaps
 -- add remap for :Ex
@@ -121,9 +123,12 @@ vim.keymap.set('n', '<leader>qu', vim.cmd.Ex, { desc = 'Write and Exit to Explor
 end)
 --]]
 --
---Remap to drag text in visual mode
+--Remap to drag text in visual mode -> Primeagen Keymaps
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+--TODO: vim.keymap.set('n', "<C-f", "<cmd>silent !tmux neww tmux-sessionizer<CR>") --> what is this doing?
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
