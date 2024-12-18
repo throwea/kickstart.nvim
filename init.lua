@@ -2,6 +2,7 @@
 -- debug ui needs to be cleaned up
 -- Learn the multiwindow features which allows for multiple inputs to appear on the screen with my new LG Monitor
 -- figure out how to get browser inside of tmux
+-- Learn more about helpful tmux plugins
 -- Find way to list all of the breakpoints 
 -- Typescript lsp is not working
 -- download vim be good to improve vim skills
