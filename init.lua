@@ -10,7 +10,9 @@
 -- Set a break point in a python project and run the debugger
 -- session- have telescope include .config or .env files as these need to be edited
 -- make sure telescope does not include .venv files or .gitignore files excluding the config files
--- Setup undo tree
+-- install tmux plugins
+-- get graphql and json lsp support and syntax highlighting -> Might need to create seperate files for .json and .gql and add a lua file on how to handle the syntax
+-- Setup undo tree -> Really need this especially when working wiuth http files
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Spend more time learning lua
 -- Figure out the tmux keymap
@@ -841,6 +843,13 @@ require('lazy').setup({
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+    end,
+  },
+  {
+    'mbbill/undotree', --TODO: set keymap to quickly open undo tree
+    opts = {},
+    config = function()
+      vim.keymap.set('n', '<F9>', vim.cmd.UndotreeToggle)
     end,
   },
   { -- Highlight, edit, and navigate code
