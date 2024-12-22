@@ -5,7 +5,6 @@
 -- Typescript lsp is not working
 -- download vim be good to improve vim skills
 -- Set a break point in a python project and run the debugger
--- make sure telescope does not include .venv files or .gitignore files excluding the config files
 -- install tmux plugins
 -- get graphql and json lsp support and syntax highlighting -> Might need to create seperate files for .json and .gql and add a lua file on how to handle the syntax
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
@@ -868,6 +867,10 @@ require('lazy').setup({
         'vim',
         'vimdoc',
         'http',
+        'yaml',
+        'json',
+        'toml',
+        'css',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
