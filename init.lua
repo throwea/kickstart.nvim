@@ -2,14 +2,13 @@
 -- figure out how to get browser inside of tmux
 -- Find way to list all of the breakpoints 
 -- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
--- Typescript lsp is not working
 -- download vim be good to improve vim skills
 -- Set a break point in a python project and run the debugger
 -- install tmux plugins
--- get graphql and json lsp support and syntax highlighting -> Might need to create seperate files for .json and .gql and add a lua file on how to handle the syntax
+-- Create intelligent structure for HTTP/Graphql requests. I'm thinking, requests/application/ with a .http file and json/graphql files
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
--- Spend more time learning lua
+-- Learn basic syntax of lua
 -- Figure out the tmux keymap
 -- Modularize config
 --  - Create a file for remaps
@@ -369,6 +368,11 @@ require('lazy').setup({
     },
   },
   { 'Bilal2453/luvit-meta', lazy = true },
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
