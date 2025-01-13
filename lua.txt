@@ -125,9 +125,7 @@ Neovim Reference:
       - Rename current window <C-b> , 
       - list current windows <C-b> w
       - close a window <C-b> &
-
-      
-      - there is a tmux plugin for nvim
+      - helpful .tmux.conf I found: https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
   
     - LSP:
       - :LsgLog let's you see the logs from your language server. This might be helpful for debugging

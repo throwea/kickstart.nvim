@@ -1,6 +1,5 @@
 --[[ TODO
--- figure out how to get browser inside of tmux
--- Add a bash function which pip installs and saves to requirements.txt in venv file
+-- figure out how to get browser inside of tmux -> Don't think this is possible
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
 -- download vim be good to improve vim skills
@@ -15,6 +14,11 @@
 --  - Create file specific configs. Python import fixes
 --  - create keymapping which allows you to copy the diagnostic message to your clipboard
 --  - create keymapping which shows a UI listing all of the git hunks that have not been stage
+-- Setup trouble from (folke)
+-- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
+-- Find helpful features for undo tree
+-- Learn basic syntax of lua
+-- Modularize config
 -- learn quickfix
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
@@ -79,7 +83,6 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
--- Setup trouble from (folke)
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
