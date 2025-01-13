@@ -1,5 +1,6 @@
 --[[ TODO
 -- figure out how to get browser inside of tmux
+-- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
 -- download vim be good to improve vim skills
@@ -10,6 +11,7 @@
 -- Find helpful features for undo tree
 -- Learn basic syntax of lua
 -- Figure out the tmux keymap
+-- Get automcompletion working for ohmyzsh
 -- Modularize config
 --  - Create a file for remaps
 -- learn quickfix
