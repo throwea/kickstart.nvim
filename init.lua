@@ -1,5 +1,6 @@
 --[[ TODO
 -- figure out how to get browser inside of tmux -> Don't think this is possible
+-- establish support for jupyter notebook https://github.com/benlubas/molten-nvim
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
 -- download vim be good to improve vim skills
