@@ -2,6 +2,8 @@
 -- figure out how to get browser inside of tmux
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
+-- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
+-- Why can't I scroll through terminal when I have two panes open
 -- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
 -- download vim be good to improve vim skills
 -- Set a break point in a python project and run the debugger

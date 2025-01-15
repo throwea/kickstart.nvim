@@ -139,6 +139,7 @@ Neovim Reference:
 
     - Helpful OMZSH Plugins:
       - https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/kubzsh-vi-modeectl/kubectl.plugin.zsh
+      - https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df
 
     - Debugging:
       - Debug golang (standalone) golang test by hitting <F5> and hitting choosing delve (go.mod) and the break point will be hit
@@ -165,3 +166,9 @@ Neovim Reference:
         3. Handle any merge conflicts by git adding the files 
         4. git cherry-pick --continue
       - View File History of changes. Go to commits and do a ctrl-s and enter file by path and choose the file. From their yhou can see the history of the file and each commit
+
+    - Helpful links
+      - installing node.js with Node Version Manager: https://heynode.com/tutorial/install-nodejs-locally-nvm/
+
+
+
