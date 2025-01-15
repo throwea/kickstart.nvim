@@ -23,6 +23,7 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+    'mfussenegger/nvim-dap-python',
   },
   keys = function(_, keys)
     local dap = require 'dap'
@@ -112,6 +113,17 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
+    -- Installing python specific config
+    -- TODO: When I run the launch file I need python from the virtual environment to be run
+    require('dap-python').setup()
+    table.insert(require('dap').configurations.python, {
+      name = 'Python Debugger: FastAPI (Affix)',
+      type = 'debugpy',
+      request = 'launch',
+      module = 'app.main',
+      jinja = true,
+      cwd = '${workspaceFolder}',
+    })
     -- Install golang specific config
     require('dap-go').setup {
       dap_configurations = {
