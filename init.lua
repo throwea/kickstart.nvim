@@ -3,7 +3,6 @@
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
--- Why can't I scroll through terminal when I have two panes open
 -- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
 -- download vim be good to improve vim skills
 -- make a keymap which downloads the diagnostic message to clipboard
@@ -12,6 +11,7 @@
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
 -- Learn basic syntax of lua
+------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
 --  - Create a file for remaps
 -- learn quickfix
@@ -114,6 +114,11 @@ vim.keymap.set('n', '<leader>d', 'dd')
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
+-- TODO: take the diagnostic message and copy it to system clipboard
+vim.keymap.set('n', '<leader>ei', function()
+  msg = vim.diagnostic.get
+  return msg
+end, { desc = 'Copy diagnostic [E]rror message to clipboard' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
 vim.keymap.set('n', '<leader>qu', vim.cmd.Ex, { desc = 'Write and Exit to Explorer' })
 --example bind to lua function
@@ -127,7 +132,6 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
---TODO: vim.keymap.set('n', "<C-f", "<cmd>silent !tmux neww tmux-sessionizer<CR>") --> what is this doing?
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
