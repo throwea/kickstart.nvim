@@ -13,7 +13,10 @@
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
---  - Create a file for remaps
+--  - Create a file for remaps -> DONE
+--  - Create file specific configs. Python import fixes
+--  - create keymapping which allows you to copy the diagnostic message to your clipboard
+--  - create keymapping which shows a UI listing all of the git hunks that have not been stage
 -- learn quickfix
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
