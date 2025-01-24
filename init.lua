@@ -6,7 +6,6 @@
 -- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
 -- download vim be good to improve vim skills
 -- make a keymap which downloads the diagnostic message to clipboard
--- Set a break point in a python project and run the debugger
 -- Create intelligent structure for HTTP/Graphql requests. I'm thinking, requests/application/ with a .http file and json/graphql files
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
