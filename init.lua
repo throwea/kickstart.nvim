@@ -3,7 +3,6 @@
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
--- add the conf from here into the mux plugin https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf
 -- download vim be good to improve vim skills
 -- make a keymap which downloads the diagnostic message to clipboard
 -- Set a break point in a python project and run the debugger
@@ -13,7 +12,6 @@
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
---  - Create a file for remaps -> DONE
 --  - Create file specific configs. Python import fixes
 --  - create keymapping which allows you to copy the diagnostic message to your clipboard
 --  - create keymapping which shows a UI listing all of the git hunks that have not been stage
