@@ -9,7 +9,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 -- TODO: take the diagnostic message and copy it to system clipboard
 vim.keymap.set('n', '<leader>ei', function()
-  msg = vim.diagnostic.get
+  msg = vim.diagnostic.get -- how do I get the actual message from the lsp?
   return msg
 end, { desc = 'Copy diagnostic [E]rror message to clipboard' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
