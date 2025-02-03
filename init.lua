@@ -4,6 +4,8 @@
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
 -- download vim be good to improve vim skills
+-- find k8s command for setting namespace as context
+-- speed up zsh autosuggestion when using the k8s api
 -- make a keymap which downloads the diagnostic message to clipboard
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
