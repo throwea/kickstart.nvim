@@ -1,15 +1,19 @@
 --[[ TODO
--- figure out how to get browser inside of tmux
--- Install yabbai on mac
+-- Install yabbai on mac -> DONE
+-- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
+-- find way for args to populate in addition to completions for a function
 -- download vim be good to improve vim skills
--- find k8s command for setting namespace as context
+-- create a bash script that will completely install all the dev dependencies needed to get started
+--  - find a way to include .zshrc, .tmux.conf and neovim config entirely inside a git repo so it can be version controlled
 -- speed up zsh autosuggestion when using the k8s api
 -- make a keymap which downloads the diagnostic message to clipboard
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
+-- create keyammping which writes and closes changes -> DONE
+-- create bash script which installs all dev dependencies via homebrew
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
@@ -139,12 +143,12 @@ vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Quick fix remaps
--- TODO: add remap to clear quickfix list
--- add remap for :cprev, :cnext
 vim.keymap.set('n', '<M-j>', '<cmd>cnext<cr>')
 vim.keymap.set('n', '<M-k>', '<cmd>cprev<cr>')
 vim.keymap.set('n', '<M-e>', '<cmd>cexpr [] | cclose<cr>')
 vim.keymap.set('n', '<M-c>', '<cmd>cclose<cr>')
+
+vim.keymap.set('n', '<leader>wq', '<cmd>wq<cr>')
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -471,6 +475,9 @@ require('lazy').setup({
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.
           map('<leader>vs', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+
+          -- TODO: make a function which allows to skip forward and backward between functions
+          -- map('<leader>vf', require('telescope.builtin').lsp_document_symbols { symbols = { 'function', 'method', 'interface' } }, 'Function Symbols')
 
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
