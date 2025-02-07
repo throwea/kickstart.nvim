@@ -5,6 +5,8 @@ Neovim Reference:
     -
 
 
+
+
   Using Lua -> Language Documentation https://neovim.io/doc/user/luaref.html#luaref
     - Run Lua from command line example -> :lua print("Hello!")
     - To run a Lua script in an external file use the source command. Example -> :source ~/programs/baz/myluascript.lua
@@ -169,6 +171,12 @@ Neovim Reference:
 
     - Helpful links
       - installing node.js with Node Version Manager: https://heynode.com/tutorial/install-nodejs-locally-nvm/
+
+    - Quickfix:
+      - :copen to open quickfix list
+      - ctrl+q while telescope is open and everything in telescope window will populate qf list. This combined with diagnostics and a keymap to jump between erros while be sick
+      - :cclose to close qf list
+
 
 
 

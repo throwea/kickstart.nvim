@@ -13,11 +13,9 @@
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
---  - Create a file for remaps -> DONE
 --  - Create file specific configs. Python import fixes
 --  - create keymapping which allows you to copy the diagnostic message to your clipboard
 --  - create keymapping which shows a UI listing all of the git hunks that have not been stage
--- learn quickfix
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------
@@ -139,6 +137,14 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- Quick fix remaps
+-- TODO: add remap to clear quickfix list
+-- add remap for :cprev, :cnext
+vim.keymap.set('n', '<M-j>', '<cmd>cnext<cr>')
+vim.keymap.set('n', '<M-k>', '<cmd>cprev<cr>')
+vim.keymap.set('n', '<M-e>', '<cmd>cexpr [] | cclose<cr>')
+vim.keymap.set('n', '<M-c>', '<cmd>cclose<cr>')
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -333,6 +339,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
       vim.keymap.set('n', '<leader>sp', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>p', builtin.git_files, { desc = 'Search Git Files' })
+      vim.keymap.set('n', '<leader>hi', builtin.git_status, { desc = 'Search Git Diff' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
