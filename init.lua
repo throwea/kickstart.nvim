@@ -1,5 +1,4 @@
 --[[ TODO
--- Install yabbai on mac -> DONE
 -- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
