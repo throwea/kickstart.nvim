@@ -1,6 +1,7 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
+-- change tmux bindings for switching panes to jklh instead of arrow keys
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
 -- find way for args to populate in addition to completions for a function
@@ -147,7 +148,7 @@ vim.keymap.set('n', '<M-k>', '<cmd>cprev<cr>')
 vim.keymap.set('n', '<M-e>', '<cmd>cexpr [] | cclose<cr>')
 vim.keymap.set('n', '<M-c>', '<cmd>cclose<cr>')
 
-vim.keymap.set('n', '<leader>wq', '<cmd>wq<cr>')
+vim.keymap.set('n', '<leader>wq', '<cmd>wqa<cr>')
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -562,7 +563,23 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        gopls = {},
+        gopls = {
+          settings = {
+            gopls = {
+              hints = {
+                assignVariableTypes = true,
+                compositeLiteralFields = true,
+                compositeLiteralTypes = true,
+                constantValues = true,
+                functionTypeParameters = true,
+                parameterNames = true,
+                rangeVariableTypes = true,
+              },
+            },
+          },
+        },
+        --TODO: set pyright options for the lsp and add inlay hints
+        --https://www.andersevenrud.net/neovim.github.io/lsp/configurations/pyright/#pyrightdisableorganizeimports
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -580,6 +597,9 @@ require('lazy').setup({
           -- capabilities = {},
           settings = {
             Lua = {
+              hint = {
+                enable = true,
+              },
               completion = {
                 callSnippet = 'Replace',
               },
