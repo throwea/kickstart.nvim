@@ -22,9 +22,9 @@
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
---  - Create file specific configs. Python import fixes
---  - create keymapping which allows you to copy the diagnostic message to your clipboard
---  - create keymapping which shows a UI listing all of the git hunks that have not been stage
+-- Create file specific configs. Python import fixes
+-- create keymapping which allows you to copy the diagnostic message to your clipboard
+-- create keymapping which shows a UI listing all of the git hunks that have not been stage
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
 -- -------------------
@@ -127,7 +127,8 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 -- TODO: take the diagnostic message and copy it to system clipboard
 vim.keymap.set('n', '<leader>ei', function()
-  msg = vim.diagnostic.get -- how do I get the actual message from the lsp?
+  msg = vim.diagnostic.show -- how do I get the actual message from the lsp?
+  print(msg)
   for m in msg do
     print(m)
   end
@@ -836,7 +837,6 @@ require('lazy').setup({
 
   -- TODO: Highlight todo, notes, etc in comments
   -- List of keywords
-  -- TODO:
   -- HACK:
   -- WARN:
   -- WARNING:
