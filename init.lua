@@ -1,19 +1,23 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
+-- Learn keybindingsd for my browser
+--    - find keybinding to type in the search bar
+--    - find keybinding that will allow me to jump through tabs
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- change tmux bindings for switching panes to jklh instead of arrow keys
 -- Find way to list all of the breakpoints 
 -- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
--- find way for args to populate in addition to completions for a function
--- download vim be good to improve vim skills
+-- find way to get inlay hints working when in insert mode
+-- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
+--  - create a gitrepo around my config
 --  - find a way to include .zshrc, .tmux.conf and neovim config entirely inside a git repo so it can be version controlled
+--  - create bash script which installs all dev dependencies via homebrew
+--  - add executable script which will isntall all the dependencies I need to get started
 -- speed up zsh autosuggestion when using the k8s api
 -- make a keymap which downloads the diagnostic message to clipboard
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
--- create keyammping which writes and closes changes -> DONE
--- create bash script which installs all dev dependencies via homebrew
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
@@ -131,10 +135,17 @@ end, { desc = 'Copy diagnostic [E]rror message to clipboard' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
 vim.keymap.set('n', '<leader>qu', vim.cmd.Ex, { desc = 'Write and Exit to Explorer' })
 --example bind to lua function
---[[vim.keymap.set("i", "jk", function()
-	print("Elian get's Neovim")
-end)
---]]
+-- vim.keymap.set('n', 'jk', function()
+--   print "Elian get's Neovim"
+-- end)
+-- MISCELLANEOUS KEYBINDINGS
+vim.keymap.set('n', '<leader>gmp', function()
+  local packages = require('mason-registry').get_installed_package_names()
+  local all_packages = table.concat(packages, '\n')
+  vim.fn.setreg('+', all_packages)
+  print 'Copied Mason packages to clipboard'
+end, { desc = '[G]et all [M]ason [P]ackages' })
+
 --
 --Remap to drag text in visual mode -> Primeagen Keymaps
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
@@ -148,7 +159,7 @@ vim.keymap.set('n', '<M-k>', '<cmd>cprev<cr>')
 vim.keymap.set('n', '<M-e>', '<cmd>cexpr [] | cclose<cr>')
 vim.keymap.set('n', '<M-c>', '<cmd>cclose<cr>')
 
-vim.keymap.set('n', '<leader>wq', '<cmd>wqa<cr>')
+vim.keymap.set('n', '<leader>wq', '<cmd>wqa!<cr>')
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
