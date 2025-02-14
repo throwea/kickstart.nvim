@@ -1,0 +1,15 @@
+stylua
+goimports
+lua-language-server
+svelte-language-server
+pyright
+gopls
+debugpy
+delve
+ruff
+prettier
+json-lsp
+gotestsum
+golangci-lint
+jq
+eslint-lsp
