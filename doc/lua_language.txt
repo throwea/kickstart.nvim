@@ -1,0 +1,29 @@
+Basics:
+For loops
+```
+for var in [iterable] do
+    [...insert_logic]
+end
+```
+
+variables
+```
+var = <some_value>
+local var = <some_value> //scopes the variable to the function/method/class it's defined in
+```
+
+Strings
+```
+print("text") -> way to print
+
+string.format(<string>, elems...) -> same logic as formatting any other string in most languages
+```
+
+Neovim:
+
+    Helpful neovim classes and methods
+
+    - vim.fn.setreg(<register>, <string>) -> This will copy the desired string to desired register. You can take lua strings and copy them to system clipboard
+    - vim.keymap.set(mode, binding, action, opts) -> basic keybinding method for neovim using lua
+    - 
+
