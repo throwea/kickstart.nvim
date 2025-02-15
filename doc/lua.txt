@@ -116,21 +116,19 @@ Neovim Reference:
     - TMUX -> Cheatsheet https://tmuxcheatsheet.com/:
       - Start new TMUX session: tmux new -s session_name (or just "tmux")
       - stop all tmux sessions: tmux kill-server
-      - Open a window pane to the right: <C-b> % 
-      - Open a window pane below: <C-b> " 
+      - Open a window pane to the right: <C-a> % 
+      - Open a window pane below: <C-a> " 
       - Close a pane with: <C-d>
-      - Move between panes: <C-b> arrow-key
-      - To start another tmux window: <C-b> c
-      - Switch between TMUX sessions <C-b> session_number
+      - Move between panes: <C-a> j, k, l, h
+      - To start another tmux window: <C-a> c
+      - Switch between TMUX sessions <C-a> session_number
       - Look at existing sessions: tmux ls
       - Reattach to a session: tmux attach -t session_number
-      - Rename current window <C-b> , 
-      - list current windows <C-b> w
-      - close a window <C-b> &
+      - Rename current window <C-a> , 
+      - list current windows <C-a> w
+      - close a window <C-a> &
+      - close a pane <C-a> x
 
-      
-      - there is a tmux plugin for nvim
-  
     - LSP:
       - :LsgLog let's you see the logs from your language server. This might be helpful for debugging
       - :LspInfo shows what LSPs are connected to the buffer
@@ -178,6 +176,9 @@ Neovim Reference:
       - :cclose to close qf list
       - when setting up local machine on mac, the meta won't work. So go to iterm settings -> profiles -> keys, Treat "opt" as Alt -> set left option key as Esc+
 
+    - Helpful terminal commands
+      - ln -s /path/to/original /path/to/symlink #this creates a pointer to the original file in the symlink path. This is helpful for storing dotfiles and config files
+      
 
 
 

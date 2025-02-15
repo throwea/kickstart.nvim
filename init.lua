@@ -4,12 +4,11 @@
 --    - find keybinding to type in the search bar
 --    - find keybinding that will allow me to jump through tabs
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
--- change tmux bindings for switching panes to jklh instead of arrow keys
 -- Find way to list all of the breakpoints 
--- Souce my tmux.conf inside of my config folder so I can add it github. I want to be able to install my entire setup from one bash script and have it entirely stored on github
 -- find way to get inlay hints working when in insert mode
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
+--  - need to figure out how to deal with git submodules. 
 --  - create something like from folke -> https://github.com/folke/dot/tree/master/nvim
 --  - add .txt file explaining everything I need to do to get everything up and running
 --  - create a gitrepo around my config
