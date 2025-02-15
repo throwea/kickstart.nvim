@@ -10,6 +10,7 @@
 -- find way to get inlay hints working when in insert mode
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
+--  - create something like from folke -> https://github.com/folke/dot/tree/master/nvim
 --  - add .txt file explaining everything I need to do to get everything up and running
 --  - create a gitrepo around my config
 --  - find a way to include .zshrc, .tmux.conf and neovim config entirely inside a git repo so it can be version controlled
