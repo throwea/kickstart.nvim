@@ -1,0 +1,19 @@
+
+Helpful browser keybinds:
+    Windows:
+        - Ctrl + w -> closes a tab 
+        - Ctrl + t  -> opens a new tab and goes to the newly opened tab
+        - Ctrl + Shift + t -> opens most recently closed tab
+        - Ctrl + Shift + n -> opens new incognito browser
+    Mac:
+        - Cmd + shift + n -> opens new incognito browser
+        - Cmd + h -> hides google chrome
+        - Cmd + m -> minimizes the chrome application
+        - Cmd + q -> quit the chrome application
+        - Cmd + t -> opens a new tab and goes to the newly opened tab
+        - Cmd + w -> closes a tab 
+        - Cmd + t  -> opens a new tab and goes to the newly opened tab
+        - Cmd + Shift + t -> opens most recently closed tab
+        - Cmd + Shift + n -> opens new incognito browser
+        - Cmd + [ or Cmd + ] -> go backward and forward through history for given tab
+
