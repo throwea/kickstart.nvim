@@ -1,19 +1,43 @@
 
 Helpful browser keybinds:
     Windows:
-        - Ctrl + w -> closes a tab 
-        - Ctrl + t  -> opens a new tab and goes to the newly opened tab
-        - Ctrl + Shift + t -> opens most recently closed tab
-        - Ctrl + Shift + n -> opens new incognito browser
+        Tab + Window Shortcuts:
+            - Ctrl + w -> closes a tab 
+            - Ctrl + t  -> opens a new tab and goes to the newly opened tab
+            - Ctrl + Shift + t -> opens most recently closed tab
+            - Ctrl + Shift + n -> opens new incognito browser
+        Address Bar Shortcuts:
+
     Mac:
-        - Cmd + shift + n -> opens new incognito browser
-        - Cmd + h -> hides google chrome
-        - Cmd + m -> minimizes the chrome application
-        - Cmd + q -> quit the chrome application
-        - Cmd + t -> opens a new tab and goes to the newly opened tab
-        - Cmd + w -> closes a tab 
-        - Cmd + t  -> opens a new tab and goes to the newly opened tab
-        - Cmd + Shift + t -> opens most recently closed tab
-        - Cmd + Shift + n -> opens new incognito browser
-        - Cmd + [ or Cmd + ] -> go backward and forward through history for given tab
+        Tab + Window Shortcuts:
+            - Cmd + shift + n -> opens new incognito browser
+            - Cmd + h -> hides google chrome
+            - Cmd + m -> minimizes the chrome application
+            - Cmd + q -> quit the chrome application
+            - Cmd + t -> opens a new tab and goes to the newly opened tab
+            - Cmd + w -> closes a tab 
+            - Cmd + t -> opens a new tab and goes to the newly opened tab
+            - Cmd + Shift + t -> opens most recently closed tab
+            - Cmd + Shift + n -> opens new incognito browser
+            - Cmd + [ or Cmd + ] -> go backward and forward through history for given tab
+
+        Address Bar Shortcuts:
+            - Cmd + l -> moves cursor to search bar and highlights entire search bar. Pretty nice
+
+        Chrome Features:
+            - Cmd + f -> search text on the page. Classic binding
+                - Cmd + g -> jump to next match. Use this if you aren't focused on the search bar
+                - Cmd + shift + g -> jump to previous match. Use this if you aren't focused on the search bar
+                - Cmd + e -> while search bar is open highlight text on the screen and use this shortcut to paste the text into the search bar
+            - <F12> -> open developer tools
+
+        Webpage shortcuts:
+            - Cmd + p -> print page 
+            - Tab or Shift + Tab -> Cycle forward and backward through clickable components
+            - Cmd + Option + j -> open javascript console
+            - Cmd + d -> save current tab in bookmarks
+            - Cmd and + or - -> zoom in or out on the current page
+            - Space or Shift + Space -> scroll down or up a web page a screen at a time
+
+
 
