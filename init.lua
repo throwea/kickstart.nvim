@@ -1,8 +1,7 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
--- Learn keybindingsd for my browser
---    - find keybinding to type in the search bar
---    - find keybinding that will allow me to jump through tabs
+-- In docs/browser.txt add the corresponding shortcuts for windows as well
+-- Find ways to increase chrome browser performance
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- find way to get inlay hints working when in insert mode
