@@ -3,10 +3,21 @@ Helpful browser keybinds:
     Windows:
         Tab + Window Shortcuts:
             - Ctrl + w -> closes a tab 
+            - Ctrl + Shift + w -> close window
             - Ctrl + t  -> opens a new tab and goes to the newly opened tab
             - Ctrl + Shift + t -> opens most recently closed tab
             - Ctrl + Shift + n -> opens new incognito browser
+            - Ctrl + 9 -> goes to the rightmost tab
+            - M + Space + n -> minimize current window
+            - M + <F4> -> close the current window
+            - M + left/right arrow -> go backward and forward through history for given tab
         Address Bar Shortcuts:
+            - Ctrl + l -> moves cursor to search bar and highlights entire search bar. Pretty nice
+            - Ctrl + k ->  search web from anywhere on the page
+
+        Webpage Shortcuts:
+            - Ctrl + r -> reload the current page
+            - Ctrl + u -> pulls up the complete html for a website
 
     Mac:
         Tab + Window Shortcuts:
