@@ -1,7 +1,6 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
 -- In docs/browser.txt add the corresponding shortcuts for windows as well
--- Find ways to increase chrome browser performance
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
 -- find way to get inlay hints working when in insert mode

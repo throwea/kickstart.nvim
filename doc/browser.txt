@@ -18,6 +18,10 @@ Helpful browser keybinds:
         Webpage Shortcuts:
             - Ctrl + r -> reload the current page
             - Ctrl + u -> pulls up the complete html for a website
+            - Ctrl + f -> search for text on the page
+                - Ctrl + g -> next occuring item being searched for
+                - Ctrl + shift + g -> previous occuring item being searched for
+                - Ctrl + Return -> clicks/focus on whatever component you are on
 
     Mac:
         Tab + Window Shortcuts:
@@ -40,6 +44,7 @@ Helpful browser keybinds:
                 - Cmd + g -> jump to next match. Use this if you aren't focused on the search bar
                 - Cmd + shift + g -> jump to previous match. Use this if you aren't focused on the search bar
                 - Cmd + e -> while search bar is open highlight text on the screen and use this shortcut to paste the text into the search bar
+                - Cmd + Return -> clicks/focus on whatever component you are on
             - <F12> -> open developer tools
 
         Webpage shortcuts:
