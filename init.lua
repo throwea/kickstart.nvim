@@ -1,6 +1,5 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
--- how do you record macros and execute them 
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- find way to get inlay hints working when in insert mode

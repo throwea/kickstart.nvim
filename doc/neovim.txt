@@ -4,9 +4,6 @@ Neovim Reference:
     - Names/Identifiers: any string of letters, digits and underscores not starting with a digit. There are a subset of keywords excluded from this set of all names. This is the same in any other language. Don't set a variable name as "return" 
     -
 
-
-
-
   Using Lua -> Language Documentation https://neovim.io/doc/user/luaref.html#luaref
     - Run Lua from command line example -> :lua print("Hello!")
     - To run a Lua script in an external file use the source command. Example -> :source ~/programs/baz/myluascript.lua
@@ -178,6 +175,18 @@ Neovim Reference:
 
     - Helpful terminal commands
       - ln -s /path/to/original /path/to/symlink #this creates a pointer to the original file in the symlink path. This is helpful for storing dotfiles and config files
+
+    - Macros:
+      - When a macro is stored in a register it's store simply as a string of terminal ascii characters 
+        - For that reason if you do "<register>d$ it will delete the contents inside that register
+      - Recording the macros
+        - First type q + <register_name>. This will start the recording of the macro
+        - After you finish recording the macro on the desired register type "q"
+      - Executing the Macro
+        - run the macro with @ + <register_name>
+        - to repeat execution of the macro use "@@"
+      - Editing Macros
+        - 
       
 
 
