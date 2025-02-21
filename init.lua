@@ -1,10 +1,8 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
 -- how do you record macros and execute them 
--- create a bind which unescapes a json sequence
--- In docs/browser.txt add the corresponding shortcuts for windows as well
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
--- Find way to list all of the breakpoints 
+-- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- find way to get inlay hints working when in insert mode
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
@@ -16,7 +14,7 @@
 --  - create bash script which installs all dev dependencies via homebrew
 --  - add executable script which will isntall all the dependencies I need to get started
 -- speed up zsh autosuggestion when using the k8s api
--- make a keymap which downloads the diagnostic message to clipboard
+-- make a keymap which downloads the diagnostic message to clipboard -> can just do <leader>e to open float then <leader>e again to go into the float and just copy the error message there
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Find helpful features for undo tree
 -- Learn basic syntax of lua
@@ -125,15 +123,6 @@ vim.keymap.set('n', '<leader>d', 'dd')
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
--- TODO: take the diagnostic message and copy it to system clipboard
-vim.keymap.set('n', '<leader>ei', function()
-  msg = vim.diagnostic.show -- how do I get the actual message from the lsp?
-  print(msg)
-  for m in msg do
-    print(m)
-  end
-  return msg
-end, { desc = 'Copy diagnostic [E]rror message to clipboard' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uick fix list' })
 vim.keymap.set('n', '<leader>qu', vim.cmd.Ex, { desc = 'Write and Exit to Explorer' })
 --example bind to lua function
