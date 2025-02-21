@@ -1,5 +1,7 @@
 --[[ TODO
 -- Learn yabai commands and how to use it
+-- how do you record macros and execute them 
+-- create a bind which unescapes a json sequence
 -- In docs/browser.txt add the corresponding shortcuts for windows as well
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints 
