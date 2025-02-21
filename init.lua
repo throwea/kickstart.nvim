@@ -4,6 +4,7 @@
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- find way to get inlay hints working when in insert mode
+-- get a jupyter notebook alternative installed through neovim
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
 --  - need to figure out how to deal with git submodules. 
@@ -13,20 +14,13 @@
 --  - find a way to include .zshrc, .tmux.conf and neovim config entirely inside a git repo so it can be version controlled
 --  - create bash script which installs all dev dependencies via homebrew
 --  - add executable script which will isntall all the dependencies I need to get started
--- speed up zsh autosuggestion when using the k8s api
--- make a keymap which downloads the diagnostic message to clipboard -> can just do <leader>e to open float then <leader>e again to go into the float and just copy the error message there
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
--- Find helpful features for undo tree
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
 -- Modularize config
--- Create file specific configs. Python import fixes
--- create keymapping which allows you to copy the diagnostic message to your clipboard
 -- create keymapping which shows a UI listing all of the git hunks that have not been stage
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
--- -------------------
--- See `:help mapleader`
 -- ]]
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
