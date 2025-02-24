@@ -234,6 +234,8 @@ require('lazy').setup({
     'mistweaverco/kulala.nvim',
     opts = {},
     config = function()
+      --TODO: use post request hooks and see if we can get the full error
+      -- this will confirm if we are sending a curl request with verbose option being true
       local builtin = require 'kulala'
       vim.keymap.set('n', '<leader>rr', builtin.run, { desc = 'Execute an http request', silent = true, noremap = true })
       vim.keymap.set('n', '<leader>i', builtin.inspect, { noremap = true, silent = true, desc = 'Inspect the current request' })
