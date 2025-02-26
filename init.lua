@@ -232,17 +232,49 @@ require('lazy').setup({
   -- REST CLIENT
   {
     'mistweaverco/kulala.nvim',
-    opts = {},
-    config = function()
-      --TODO: use post request hooks and see if we can get the full error
-      -- this will confirm if we are sending a curl request with verbose option being true
-      local builtin = require 'kulala'
-      vim.keymap.set('n', '<leader>rr', builtin.run, { desc = 'Execute an http request', silent = true, noremap = true })
-      vim.keymap.set('n', '<leader>i', builtin.inspect, { noremap = true, silent = true, desc = 'Inspect the current request' })
-      vim.keymap.set('n', '<leader>co', builtin.copy, { noremap = true, silent = true, desc = 'Copy the current request as a curl command' })
-      vim.keymap.set('n', '<leader>ci', builtin.from_curl, { noremap = true, silent = true, desc = 'Paste curl from clipboard as http request' })
-      vim.keymap.set('n', '<leader>tv', builtin.toggle_view, { noremap = true, silent = true, desc = 'Toggle between body and headers' })
-    end,
+    opts = {
+      debug = true,
+      global_keymaps = {
+        ['Send request'] = { -- sets global mapping
+          '<leader>rr',
+          function()
+            require('kulala').run()
+          end,
+          mode = { 'n' }, -- optional mode, default is n
+          desc = 'Send request', -- optional description, otherwise inferred from the key
+        },
+        ['Send all requests'] = {
+          '<leader>Ra',
+          function()
+            require('kulala').run_all()
+          end,
+          mode = { 'n', 'v' },
+          ft = 'http', -- sets mapping for *.http files only
+        },
+        ['Copy as cURL'] = {
+          '<leader>co',
+          function()
+            require('kulala').copy()
+          end,
+          ft = { 'http', 'rest' }, -- sets mapping for specified file types
+        },
+        ['Inspect current request'] = {
+          '<leader>i',
+          function()
+            require('kulala').inspect()
+          end,
+          ft = { 'http', 'rest' },
+        },
+        ['Toggle headers/body'] = {
+          '<leader>tv',
+          function()
+            require('kulala').toggle_view()
+          end,
+          ft = { 'http', 'rest' },
+        },
+        ['Find request'] = false, -- set to false to disable
+      },
+    },
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
