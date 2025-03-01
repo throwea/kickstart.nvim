@@ -4,6 +4,7 @@
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- find way to get inlay hints working when in insert mode
 -- get a jupyter notebook alternative installed through neovim
+-- find more easy way to record and execute macros instead of having to use @
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
 --  - need to figure out how to deal with git submodules. 
