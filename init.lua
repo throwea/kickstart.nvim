@@ -2,6 +2,8 @@
 -- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
+-- learn fzf so I can search and cd directly into directories
+--    - configure it s.t. it only looks through my code direcotries
 -- find way to get inlay hints working when in insert mode
 -- get a jupyter notebook alternative installed through neovim
 -- find more easy way to record and execute macros instead of having to use @
