@@ -185,9 +185,12 @@ Neovim Reference:
       - Executing the Macro
         - run the macro with @ + <register_name>
         - to repeat execution of the macro use "@@"
-      - Editing Macros
-        - 
-      
+        - If you want to apply a macro to the next 5 lines (for example) do 5@<register_name> and it will apply the macro 5 times.
+
+    - Fzf
+      - Use <M-c> in terminal to search for directories. In the future I make a binding which executes fzf directory search and pipes results to nvim {} to immediately start coding
+      - <C-t> does a basic file search over the entire computer
+      - <C-r> does a fzf search over the command history
 
 
 

@@ -2,11 +2,9 @@
 -- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
--- learn fzf so I can search and cd directly into directories
---    - configure it s.t. it only looks through my code direcotries
+-- Find way to trigger nvim when searching for directories through Fzf. Maybe set a keybind which triggers fzf dir finder then immediately triggers nvim with the result. Check this out: https://github.com/junegunn/fzf?tab=readme-ov-file#turning-into-a-different-process
 -- find way to get inlay hints working when in insert mode
 -- get a jupyter notebook alternative installed through neovim
--- find more easy way to record and execute macros instead of having to use @
 -- use vim be good and practice
 -- create a bash script that will completely install all the dev dependencies needed to get started
 --  - need to figure out how to deal with git submodules. 
