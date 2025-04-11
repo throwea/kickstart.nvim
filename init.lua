@@ -1,4 +1,5 @@
 --[[ TODO
+-- Refine my neovim setup for react. The formatting is messed up and I need to get better suggestions, typechecks, etc
 -- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
