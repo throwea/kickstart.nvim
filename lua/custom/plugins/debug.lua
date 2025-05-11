@@ -124,6 +124,13 @@ return {
       jinja = true,
       cwd = '${workspaceFolder}',
     })
+    table.insert(require('dap').configurations.python, {
+      name = 'Python Debugger: Current File',
+      type = 'debugpy',
+      request = 'launch',
+      module = '${file}',
+      cwd = '${workspaceFolder}',
+    })
     -- Install golang specific config
     require('dap-go').setup {
       dap_configurations = {
