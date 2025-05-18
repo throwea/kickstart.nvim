@@ -1,6 +1,5 @@
 --[[ TODO
 -- Refine my neovim setup for react. The formatting is messed up and I need to get better suggestions, typechecks, etc
--- Learn yabai commands and how to use it
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- install neorg for better notetaking
@@ -19,7 +18,6 @@
 -- find helpful keymaps for lsp. Especially one which jumps forward and backwards to different funcitons
 -- Learn basic syntax of lua
 ------ deubgging lua files https://zignar.net/2023/06/10/debugging-lua-in-neovim/
--- Modularize config
 -- create keymapping which shows a UI listing all of the git hunks that have not been stage
 -- https://www.youtube.com/watch?v=-ybCiHPWKNA 1:00:00
 -- package/plugin management https://www.youtube.com/watch?v=-ybCiHPWKNA&t=1557s 
