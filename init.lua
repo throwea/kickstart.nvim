@@ -132,11 +132,17 @@ vim.keymap.set('n', '<leader>gmp', function()
   print 'Copied Mason packages to clipboard'
 end, { desc = '[G]et all [M]ason [P]ackages' })
 
-vim.keymap.set('n', '<leader>get', function()
+vim.keymap.set('n', '<leader>post', function()
   local request =
-    '###\nGET http://localhost:8080\naccept: application/json\ncontent-type: application/json\nauthorization: bearer <token>\n\n{\n\t"param1": "test1"\n}'
+    '###\nPOST http://localhost:8080\naccept: application/json\ncontent-type: application/json\nauthorization: bearer <token>\n\n{\n\t"param1": "test1"\n}'
   vim.fn.setreg('+', request)
 end)
+
+vim.keymap.set('n', '<leader>get', function()
+  local request = '###\nGET http://localhost:8080/{endpoint}'
+  vim.fn.setreg('+', request)
+end)
+
 --
 --Remap to drag text in visual mode -> Primeagen Keymaps
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
