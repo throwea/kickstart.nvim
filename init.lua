@@ -133,17 +133,45 @@ vim.keymap.set('n', '<leader>gmp', function()
 end, { desc = '[G]et all [M]ason [P]ackages' })
 
 vim.keymap.set('n', '<leader>post', function()
-  local request =
-    '###\nPOST http://localhost:8080\naccept: application/json\ncontent-type: application/json\nauthorization: bearer <token>\n\n{\n\t"param1": "test1"\n}'
-  vim.fn.setreg('+', request)
+  local request = {
+    '###',
+    'POST http://localhost:8080',
+    'accept: application/json',
+    'content-type: application/json',
+    'authorization: bearer <token>',
+    '\n{',
+    '\t"param1": "test1"',
+    '}',
+  }
+  -- vim.fn.setreg('+', request)
+  local r, _ = unpack(vim.api.nvim_win_get_cursor(0))
+  vim.fn.append(r, request)
 end)
 
 vim.keymap.set('n', '<leader>get', function()
-  local request = '###\nGET http://localhost:8080/{endpoint}'
-  vim.fn.setreg('+', request)
+  --local request = '###\nGET http://localhost:8080/{endpoint}'
+  local request = { '###', 'GET http://localhost:8080/{endpoint}' }
+  --vim.fn.setreg('+', request)
+  local r, _ = unpack(vim.api.nvim_win_get_cursor(0))
+  vim.fn.append(r, request)
 end)
 
+vim.keymap.set('n', '<leader>err', function()
+  --local request = '###\nGET http://localhost:8080/{endpoint}'
+  local request = { 'if err != nil {', '\treturn err', '}' }
+  --vim.fn.setreg('+', request)
+  local r, _ = unpack(vim.api.nvim_win_get_cursor(0))
+  vim.fn.append(r, request)
+end)
+
+-- -- NOTE: how to get the position of cursor. Returns (row, column)
+-- vim.keymap.set('n', '<leader>line', function()
+--   --local request = '###\nGET http://localhost:8080/{endpoint}'
+--   local r, c = unpack(vim.api.nvim_win_get_cursor(0))
+--   print(r, c)
+-- end)
 --
+
 --Remap to drag text in visual mode -> Primeagen Keymaps
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
