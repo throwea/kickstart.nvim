@@ -1,7 +1,6 @@
 --[[ TODO
 -- Refine my neovim setup for react. The formatting is messed up and I need to get better suggestions, typechecks, etc
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
--- Create a key binding which pastes HTTP Requests with correct fields needed
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- install neorg for better notetaking
 -- Find way to trigger nvim when searching for directories through Fzf. Maybe set a keybind which triggers fzf dir finder then immediately triggers nvim with the result. Check this out: https://github.com/junegunn/fzf?tab=readme-ov-file#turning-into-a-different-process
