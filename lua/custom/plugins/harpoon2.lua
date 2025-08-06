@@ -28,11 +28,22 @@ return {
       },
     }
 
+    -- NOTE: setting keys for harpooning between files
     for i = 1, 5 do
       table.insert(keys, {
         '<leader>' .. i,
         function()
           require('harpoon'):list():select(i)
+        end,
+        desc = 'Harpoon to File ' .. i,
+      })
+    end
+
+    for i = 1, 5 do
+      table.insert(keys, {
+        '<leader>r' .. i,
+        function()
+          require('harpoon'):list():remove_at(i)
         end,
         desc = 'Harpoon to File ' .. i,
       })
