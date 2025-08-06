@@ -1,5 +1,6 @@
 --[[ TODO
 -- Refine my neovim setup for react. The formatting is messed up and I need to get better suggestions, typechecks, etc
+-- Disable dapui console in the debugger. It's not doing anything
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
 -- install neorg for better notetaking

@@ -19,6 +19,13 @@ return {
         desc = 'Harpoon File',
       },
       {
+        '<leader>hc',
+        function()
+          require('harpoon'):list():clear()
+        end,
+        desc = 'Harpoon File',
+      },
+      {
         '<leader>h',
         function()
           local harpoon = require 'harpoon'
