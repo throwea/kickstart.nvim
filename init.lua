@@ -1,5 +1,7 @@
 --[[ TODO
 -- Refine my neovim setup for react. The formatting is messed up and I need to get better suggestions, typechecks, etc
+-- Create directory for my secrets and establish a symlink from config file to actual secret
+-- Start scripting in bash. Make utility scripts. It takes way too long to get my applications set up the way I want them
 -- Disable dapui console in the debugger. It's not doing anything
 -- Add a bash function which pip installs and saves to requirements.txt in venv file
 -- Find way to list all of the breakpoints. Might be able to use quickfix list
